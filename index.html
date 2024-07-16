@@ -298,91 +298,152 @@
   </section>
 
   <!-- end about section -->
- <!-- services section --><style>
+ <!-- services section -->
+ <style>
+  .services_section {
+      padding: 40px 0;
+  }
+
+  .heading_container {
+      text-align: center;
+      margin-bottom: 40px;
+  }
+
+  .heading_container h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  }
+
+  .heading_container p {
+      font-size: 1.1rem;
+      color: #555;
+  }
+
+  .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 550px;
+      margin: 10px 0;
+  }
+
+  .image-container img {
+      width: 100%;
+      height: 280;
+      display: block;
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .overlay h4 {
+      margin: 0;
+      font-size: 1.2rem;
+  }
+
+  .image-container:hover .overlay {
+      opacity: 10;
+  }
+
   .mini-frame {
-    background-color: #e0f2e9; /* Light shade of forest green */
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+      background-color: #e0f2e9; /* Light shade of forest green */
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
   }
+
+  .mini-frame h5 {
+      margin: 0;
+      font-size: 1.2rem;
+  }
+
   .mini-frame a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #006400; /* Forest green */
-    text-decoration: none;
-    font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      color: #006400; /* Forest green */
+      text-decoration: none;
+      font-weight: bold;
   }
+
   .mini-frame a:hover {
-    text-decoration: underline;
+      text-decoration: underline;
   }
 </style>
-
 <section class="services_section layout_padding">
   <div class="container">
-    <div class="heading_container">
-      <h2>
-        Our Services
-      </h2>
-      <p>
-        We provide a range of services that cater to your business needs, ensuring you stay ahead in the digital landscape.
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-6">
-        <img src="images/dataanalytics.jpg" alt="Data Analytics" width="550" height="280">
-        <div class="mini-frame">
-          <h5>Data Analytics</h5>
-          <a href="contact.html">Enquire</a>
-        </div>
+      <div class="heading_container">
+          <h2>Our Services</h2>
+          <p>We provide a range of services that cater to your business needs, ensuring you stay ahead in the digital landscape.</p>
       </div>
-      <div class="col-md-6 col-lg-6">
-        <img src="images/datascience.png" alt="Data Science" width="550" height="280">
-        <div class="mini-frame">
-          <h5>Data Science</h5>
-          <a href="contact.html">Enquire</a>
-        </div>
+      <div class="row">
+          <div class="col-md-6 col-lg-6">
+              <div class="image-container">
+                  <img src="images/dataanalytics.jpg" alt="Data Analytics" width="550" height="280">
+                  <div class="overlay">
+                      <h4>We turn data into actionable insights with real-time reporting and predictive models. Optimize your strategies and drive success with our tailored analytics solutions.</h4>
+                  </div>
+              </div>
+              <div class="mini-frame">
+                  <h5>Data Analytics</h5>
+                  <a href="your_enquiry_link_here">Enquire</a>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+              <div class="image-container">
+                  <img src="images/datascience.png" alt="Data Science" width="550" height="280">
+                  <div class="overlay">
+                      <h4>We turn data into actionable insights with real-time reporting and predictive models. Optimize your strategies and drive success with our tailored analytics solutions.</h4>
+                  </div>
+              </div>
+              <div class="mini-frame">
+                  <h5>Data Science</h5>
+                  <a href="your_enquiry_link_here">Enquire</a>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+              <div class="image-container">
+                  <img src="images/seo.jpeg" alt="SEO Optimization" width="550" height="280">
+                  <div class="overlay">
+                      <h4>We turn data into actionable insights with real-time reporting and predictive models. Optimize your strategies and drive success with our tailored analytics solutions.</h4>
+                  </div>
+              </div>
+              <div class="mini-frame">
+                  <h5>SEO Optimization</h5>
+                  <a href="your_enquiry_link_here">Enquire</a>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+              <div class="image-container">
+                  <img src="images/web.jpg" alt="Web Development" width="550" height="280">
+                  <div class="overlay">
+                      <h4>We turn data into actionable insights with real-time reporting and predictive models. Optimize your strategies and drive success with our tailored analytics solutions.</h4>
+                  </div>
+              </div>
+              <div class="mini-frame">
+                  <h5>Web Development</h5>
+                  <a href="your_enquiry_link_here">Enquire</a>
+              </div>
+          </div>
       </div>
-      <div class="col-md-6 col-lg-6">
-        <img src="images/seo.jpeg" alt="SEO Optimization" width="550" height="280">
-        <div class="mini-frame">
-          <h5>SEO Optimization</h5>
-          <a href="contact.html">Enquire</a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-6">
-        <img src="images/web.jpg" alt="Web Development" width="550" height="280">
-        <div class="mini-frame">
-          <h5>Web Development</h5>
-          <a href="contact.html">Enquire</a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-6">
-        <img src="images/interior.jpg" alt="Cloud Computing" width="550" height="280">
-        <div class="mini-frame">
-          <h5>Interior Designing</h5>
-          <a href="contact.html">Enquire</a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-6">
-        <img src="images/product.jpg" alt="AI Solutions" width="550" height="280">
-        <div class="mini-frame">
-          <h5>Product Design</h5>
-          <a href="contact.html">Enquire</a>
-        </div>
-      </div>
-      <div class="col-md-12 col-lg-12 text-center">
-        <img src="images/automation.jpg" alt="IT Consulting" width="550" height="280">
-        <div class="mini-frame">
-          <h5>Mechanical and Automation</h5>
-          <a href="contact.html">Enquire</a>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
-
 
 
 <!-- end service section -->
